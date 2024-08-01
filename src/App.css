@@ -1,0 +1,110 @@
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+  
+.app-container {
+  background:#fff ;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+ }
+  
+.form-group {
+  margin-bottom: 1rem;
+}
+  
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+  
+input, textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+  
+textarea {
+  resize: horizontal;
+}
+  
+.input-error {
+  border-color: red;
+}
+  
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+  
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+  
+.checkbox-group input {
+  margin-right: 10rem;
+  flex-wrap: wrap;
+}
+  
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color:#107c6c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+  
+button:hover {
+  background-color: #107c6c;
+}
+
+.query-type-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.query-type-option {
+  flex: 1;
+  display: flex;
+  align-items:center;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.query-type-option:last-child {
+  margin-right: 0;
+}
+
+.query-type-option input {
+  margin-right: 0.5rem;
+}
+
+
+
+
