@@ -1,5 +1,5 @@
 import './App.css'
-import Formulario from './componentes/form';
+import Formulario from '../src/componentes/form';
 
 function App() {
     return (
@@ -11,5 +11,3 @@ function App() {
 
 
 export default App;
-
-
