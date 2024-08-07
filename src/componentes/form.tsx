@@ -30,35 +30,38 @@ const Formulario: React.FC = () => {
   };
 
   return (
-    <div className="app-container">
-      <h1>Contact Us</h1>
+    <div className="form-container">
+      <h2>Contact Us</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-group">
-          <label>First Name</label>
-          <input
-            className={errors.first_name ? "input-error" : ""}
-            type="text"
-            placeholder="Your first name"
-            {...register("first_name", { required: true })}
-          />
-          {errors.first_name && (
-            <p className="error-message">First Name is required.</p>
-          )}
+        <div className="name-fields">
+          <div className="form-group">
+            <label htmlFor="firstName">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              placeholder="Your first name"
+              {...register('first_name', { required: 'First name is required' })}
+              className={errors.first_name ? 'input-error' : ''}
+            />
+            {errors.first_name && (
+              <p className="error-message">{errors.first_name.message}</p>
+            )}
+          </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              placeholder="Your last name"
+              {...register('last_name', { required: 'Last name is required' })}
+              className={errors.last_name ? 'input-error' : ''}
+            />
+            {errors.last_name && (
+              <p className="error-message">{errors.last_name.message}</p>
+            )}
+          </div>
         </div>
-
-        <div className="form-group">
-          <label>Last Name</label>
-          <input
-            className={errors.last_name ? "input-error" : ""}
-            type="text"
-            placeholder="Your last name"
-            {...register("last_name", { required: true })}
-          />
-          {errors.last_name && (
-            <p className="error-message">Last Name is required.</p>
-          )}
-        </div>
-
+    
         <div className="form-group">
           <label>Email Address</label>
           <input
